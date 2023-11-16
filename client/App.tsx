@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from "./app/Home";
-import Login from "./app/Login";
-import Register from "./app/Register";
+import Home from "./app/pages/Home";
+import Login from "./app/pages/Login";
+import Register from "./app/pages/Register";
 
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";

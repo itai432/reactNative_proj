@@ -1,30 +1,31 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
+import ScreenWrapper from '../components/ScreenWrapper';
 
-
-function Login() {
+function Home() {
   const navigation = useNavigation<NavigationProp<any>>();
 
   return (
+    <ScreenWrapper>
     <View style={styles.container}>
-      <TouchableOpacity
+      <TouchableOpacity 
         onPress={() => {
-          navigation.navigate("home");
+          navigation.navigate("login");
         }}
       >
-        <Text style={styles.btn}>back to home</Text>
+        <Text style={styles.btn}>Press Here</Text>
       </TouchableOpacity>
     </View>
+    </ScreenWrapper>
   );
 }
 
-export default Login;
+export default Home;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
